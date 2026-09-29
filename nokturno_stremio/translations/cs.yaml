@@ -1,4 +1,10 @@
 configuration:
+  host:
+    name: Adresa poslechu
+    description: 0.0.0.0 = celá síť. Za reverzní proxy (Cloudflare Tunnel) 127.0.0.1.
+  soukroma:
+    name: Soukromá instance
+    description: Doplněk obslouží jen nastavení povolená tlačítkem Povolit na tomhle serveru na /configure. Pro adresu doplňku v internetu.
   port:
     name: Port HTTP
     description: Nastavení doplňku na /configure a doplněk pro Nuvio.
