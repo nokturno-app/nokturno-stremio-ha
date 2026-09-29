@@ -1,0 +1,25 @@
+configuration:
+  port:
+    name: Port HTTP
+    description: Nastavení doplňku na /configure a doplněk pro Nuvio.
+  https_port:
+    name: Port HTTPS
+    description: Doplněk pro Stremio v domácí síti (adresa přes local-ip.co).
+  enable_https:
+    name: Zapnout HTTPS
+    description: Stremio mimo webový přehrávač chce doplněk přes HTTPS. Nuvio si vystačí s HTTP.
+  tmdb_key:
+    name: Klíč TMDB
+    description: Nepovinný vlastní klíč TMDB pro katalogy TMDB.
+  stats:
+    name: Anonymní statistiky
+    description: Posílat anonymní statistiky používání.
+  crash_reports:
+    name: Hlášení o chybách
+    description: Posílat hlášení o pádech doplňku, bez hesel a adres.
+  update_url:
+    name: Adresa aktualizací
+    description: Nech prázdné. Doplněk si pak nové verze stahuje sám z oficiálního vydání.
+network:
+  7140/tcp: HTTP (nastavení na /configure, doplněk pro Nuvio)
+  7141/tcp: HTTPS přes local-ip.co (doplněk pro Stremio v síti)

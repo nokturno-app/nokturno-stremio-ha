@@ -1,0 +1,25 @@
+configuration:
+  port:
+    name: HTTP port
+    description: Add-on settings at /configure and the add-on for Nuvio.
+  https_port:
+    name: HTTPS port
+    description: Add-on for Stremio in your home network (address via local-ip.co).
+  enable_https:
+    name: Enable HTTPS
+    description: Stremio apps need the add-on over HTTPS. Nuvio works with HTTP.
+  tmdb_key:
+    name: TMDB key
+    description: Optional own TMDB key for TMDB catalogs.
+  stats:
+    name: Anonymous statistics
+    description: Send anonymous usage statistics.
+  crash_reports:
+    name: Crash reports
+    description: Send crash reports, without passwords and addresses.
+  update_url:
+    name: Update URL
+    description: Leave empty. The add-on then downloads new versions from the official release by itself.
+network:
+  7140/tcp: HTTP (settings at /configure, add-on for Nuvio)
+  7141/tcp: HTTPS via local-ip.co (add-on for Stremio in your network)
