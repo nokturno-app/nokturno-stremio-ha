@@ -5,6 +5,9 @@ configuration:
   soukroma:
     name: Soukromá instance
     description: Doplněk obslouží jen nastavení povolená tlačítkem Povolit na tomhle serveru na /configure. Pro adresu doplňku v internetu.
+  public_url:
+    name: Veřejná adresa doplňku
+    description: Adresa, kterou ukáže /configure, např. https://nokturno.example.cz. Prázdné = adresa, přes kterou je formulář otevřený.
   port:
     name: Port HTTP
     description: Nastavení doplňku na /configure a doplněk pro Nuvio.

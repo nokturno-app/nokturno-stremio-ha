@@ -18,6 +18,7 @@ Home Assistantu nastav v routeru pevnou IP (rezervace DHCP), jinak doplněk po z
 |---|---|
 | `host` | adresa poslechu, `0.0.0.0` = celá síť, za reverzní proxy `127.0.0.1` |
 | `soukroma` | soukromá instance: doplněk obslouží jen nastavení povolená tlačítkem *Povolit na tomhle serveru* na `/configure` |
+| `public_url` | veřejná adresa doplňku, kterou ukáže `/configure`, např. `https://nokturno.example.cz` – když formulář otevíráš přes domácí síť |
 | `port` | HTTP: nastavení na `/configure` a doplněk pro Nuvio (výchozí 7140) |
 | `https_port` | HTTPS přes local-ip.co pro Stremio v síti (výchozí 7141) |
 | `enable_https` | vypnutím zůstane jen HTTP |

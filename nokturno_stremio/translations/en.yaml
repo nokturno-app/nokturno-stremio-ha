@@ -5,6 +5,9 @@ configuration:
   soukroma:
     name: Private instance
     description: The add-on serves only settings allowed with the Allow on this server button at /configure. For an add-on address on the internet.
+  public_url:
+    name: Public add-on address
+    description: Address shown at /configure, e.g. https://nokturno.example.cz. Empty = the address the form was opened with.
   port:
     name: HTTP port
     description: Add-on settings at /configure and the add-on for Nuvio.
