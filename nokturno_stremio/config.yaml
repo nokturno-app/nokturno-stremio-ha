@@ -1,5 +1,5 @@
 name: Nokturno pro Stremio
-version: "9.0.8"
+version: "9.0.9"
 slug: nokturno_stremio
 description: Doplněk Nokturno pro Stremio a Nuvio, běžící doma v Home Assistantu. Stremio v síti přes HTTPS (local-ip.co), Nuvio přes HTTP.
 url: https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace
