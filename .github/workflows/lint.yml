@@ -23,9 +23,9 @@ jobs:
         run: |
           mkdir -p data
           echo '{"port":7140,"https_port":7141,"enable_https":false,"tmdb_key":"","stats":false,"crash_reports":false,"update_url":""}' > data/options.json
-          docker run -d --name n --network host -v "$PWD/data:/data" nokturno-ha
+          docker run -d --name nokturno --network host -v "$PWD/data:/data" nokturno-ha
           for i in $(seq 30); do curl -fs http://127.0.0.1:7140/health && break; sleep 2; done
           curl -fsS http://127.0.0.1:7140/health
           curl -fsS http://127.0.0.1:7140/manifest.json | python3 -c 'import json,sys; m=json.load(sys.stdin); print(m["id"], m["version"])'
-          docker exec n cat /app/version.txt
-          docker logs n
+          docker exec nokturno cat /app/version.txt
+          docker logs nokturno

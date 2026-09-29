@@ -6,10 +6,8 @@ url: https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace
 arch:
   - amd64
   - aarch64
-  - armv7
 init: false
 startup: services
-boot: auto
 host_network: true
 webui: "http://[HOST]:[PORT:7140]/configure"
 ports:

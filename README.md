@@ -8,7 +8,7 @@ v Home Assistantu, přihlašovací údaje ke zdrojům tak neprocházejí přes �
 Ručně: **Nastavení → Doplňky → Obchod s doplňky → ⋮ → Úložiště** a přidej
 `https://github.com/nokturno-app/nokturno-stremio-ha`. Pak nainstaluj **Nokturno pro Stremio**.
 
-Doplněk je pro amd64, aarch64 i armv7. Kód se stahuje při sestavení z
+Doplněk je pro amd64 a aarch64. Kód se stahuje při sestavení z
 [vydání aplikace](https://github.com/nokturno-app/nokturno-stremio-app/releases) (ověřený SHA-256) a nové verze
 si doplněk stahuje sám.
 
